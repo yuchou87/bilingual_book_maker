@@ -422,6 +422,10 @@ class ChatGPTAPI(Base):
             print(f"Using model list {model_list}")
             self.model_list = cycle(model_list)
 
+    def set_custom_model(self, model: str):
+        print(f"Using custom model: {model}")
+        self.model_list = cycle([model])
+
     def set_model_list(self, model_list):
         model_list = list(set(model_list))
         print(f"Using model list {model_list}")

@@ -497,6 +497,8 @@ So you are close to reaching the limit. You have to choose your own value, there
         e.translate_model.set_gpt4o_models()
     if options.model.startswith("claude-"):
         e.translate_model.set_claude_model(options.model)
+    if options.model.startswith("openai/"):
+        e.translate_model.set_custom_model(options.model)
     if options.block_size > 0:
         e.block_size = options.block_size
     if options.batch_flag:

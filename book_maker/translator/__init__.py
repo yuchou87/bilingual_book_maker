@@ -32,5 +32,5 @@ MODEL_DICT = {
     "tencentransmart": TencentTranSmart,
     "customapi": CustomAPI,
     "xai": XAIClient,
-    # add more here
+    "openai/": ChatGPTAPI,
 }
